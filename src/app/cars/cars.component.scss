@@ -1,0 +1,44 @@
+.product {
+  padding: 50px 20px;
+  text-align: center;
+
+  .product-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .product-image {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .product-details {
+      text-align: left;
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #0077b5;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #005f8a;
+        }
+      }
+    }
+  }
+}
