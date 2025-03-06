@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   padding: 20px;
   box-sizing: border-box;
 
@@ -19,8 +19,11 @@
 
     .profile-image {
       width: 180px;
+      height: 180px;
       max-width: 280px;
+      max-height: 280px;
       border-radius: 50%;
+      object-fit: cover;
     }
 
     h1 {
@@ -35,6 +38,7 @@
       width: 100%;
       gap: 15px;
       color: white;
+      
 
       a {
         font-size: 1.5rem;
@@ -60,18 +64,48 @@
 
   .profile {
     max-width: 100%;
+    width: 100%;
     padding: 20px;
     margin-top: 0;
-  }
 
-  h1 {
-    font-size: 18px;
-  }
+    .profile-image {
+      width: 100px;
+      height: 100px;
+    }
 
-  .social-icons {
-    a {
-      font-size: 24px;
-      color: white;
+    h1 {
+      font-size: 18px;
+    }
+
+    .social-icons {
+      a {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .profile {
+    padding-top: 80px;
+    padding: 0;
+
+    .profile-image {
+      width: 80px;
+      height: 80px;
+      box-shadow: 4px 4px 10px rgba(254, 235, 106, 0.3);
+
+    }
+
+    h1 {
+      font-size: 16px;
+    }
+
+    .social-icons {
+      gap: 8px;
+      a {
+        font-size: 18px;
+      }
     }
   }
 }

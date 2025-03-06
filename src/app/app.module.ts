@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -22,7 +23,7 @@ import { ContactComponent } from './contact/contact.component';
     CarsComponent,
     ApartmentsComponent,
     MentorshipComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

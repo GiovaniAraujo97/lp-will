@@ -8,7 +8,7 @@
     align-items: center;
 
     .product-image {
-      width: 300px;
+      width: 100%;
       height: auto;
       border-radius: 10px;
     }
@@ -27,16 +27,26 @@
       }
 
       button {
+        width: 100%;
+        height: 56px;
         padding: 10px 20px;
         font-size: 1rem;
-        background-color: #0077b5;
+        background-color: rgba(254, 235, 106, 0.3);
         color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;
 
         &:hover {
-          background-color: #005f8a;
+          background-color: rgba(210, 194, 89, 0.3);
+        }
+
+        a {
+          color: white;
+          font-weight: 600;
+          font-family: "Oscine", sans-serif;
+          font-size: 18px;
+          text-decoration: none;
         }
       }
     }
