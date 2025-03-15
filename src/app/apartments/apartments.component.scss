@@ -1,29 +1,43 @@
 .product {
-  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
   text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 
   .product-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
 
     .product-image {
-      width: 100%;
+      width: 380px;
       height: auto;
       border-radius: 10px;
+      object-fit: cover;
     }
 
     .product-details {
       text-align: left;
+      max-width: 600px;
 
       h2 {
         font-size: 2rem;
         margin-bottom: 20px;
+        color: #fff;
       }
 
       p {
         font-size: 1.2rem;
         margin-bottom: 20px;
+        color: #fff;
+        line-height: 1.6;
       }
 
       button {
@@ -36,6 +50,7 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        transition: background-color 0.3s ease;
 
         &:hover {
           background-color: rgba(210, 194, 89, 0.3);
@@ -47,6 +62,90 @@
           font-family: "Oscine", sans-serif;
           font-size: 18px;
           text-decoration: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .product-content {
+      padding: 24px 12px;
+      margin: 0;
+      height: 80vh;
+      width: 100%;
+      flex-direction: column;
+
+      .product-image {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .product-details {
+        text-align: center;
+        gap: 8px;
+
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-content {
+      .product-image {
+        width: 100%;
+        max-width: 380px;
+      }
+
+      .product-details {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        button {
+          height: 50px;
+          font-size: 0.9rem;
+
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-content {
+      .product-image {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .product-details {
+        h2 {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        button {
+          height: 45px;
+          font-size: 0.8rem;
+
+          a {
+            font-size: 14px;
+          }
         }
       }
     }

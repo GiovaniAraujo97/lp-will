@@ -18,11 +18,11 @@ const routes: Routes = [
   { path: 'apartments', component: ApartmentsComponent },
   { path: 'mentorship', component: MentorshipComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '**', redirectTo: '' }  // Para qualquer rota inválida, redireciona para a home
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)], // Configura as rotas
-  exports: [RouterModule]  // Exporta o RouterModule para ser usado no AppModule
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule {}

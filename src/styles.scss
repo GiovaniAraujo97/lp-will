@@ -26,3 +26,9 @@ body {
     font-size: 12px;
   }
 }
+
+app-home, app-about {
+  display: block; /* Garante que os componentes sejam blocos */
+  margin: 0;
+  padding: 0;
+}
